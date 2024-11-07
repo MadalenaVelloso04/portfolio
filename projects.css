@@ -663,16 +663,33 @@ font-style: normal;
 }
 #project5 .project-text h1 {
   color: #76946e;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 #project5 .project-section {
   background-color: #00000071;
-  background-image: url(images/WebP/backgroundse.webp);
+  background-image: url(images/leafs\ Large.jpeg);
   background-position:center;
   background-blend-mode: overlay; /* Or use multiply, darken, etc., depending on the effect you want */
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#project6 .project-section {
+  background-color: #00000071;
+  background-image: url(images/descarriladostitulos.webp);
+  background-position:center;
+  background-blend-mode: overlay; /* Or use multiply, darken, etc., depending on the effect you want */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#project6 .project-text h1 {
+  color: #FF3333;
+  font-size: 3vw;
+}
+
+#project6 .project-text p {
+  color:#FCF1D2;
 }
 
 
