@@ -506,6 +506,7 @@ font-style: normal;
 .carousel-item {
   position: absolute; /* Position each item absolutely within the container */
   width: 30vw; /* Fixed width for images */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   height: auto; /* Adjust height automatically based on content */
   overflow: hidden;
   transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover and appearance */
@@ -553,33 +554,33 @@ font-style: normal;
 
 .item5 {
   top: 120vh; /* Random position below the others */
-  left: 3vw; /* Positioned inside container */
+  left: 1vw; /* Positioned inside container */
 }
 
 /* Random positioning for each item */
 .item6 {
   top: 140vh; /* First item at the top */
-  left: 0; /* Aligned to the left */
+  left: 17vw; /* Aligned to the left */
 }
 
 .item7 {
   top: 170vh; /* Push second item down slightly (with gap) */
-  left: 20vw; /* Positioned to the right */
+  left: 8vw; /* Positioned to the right */
 }
 
 .item8 {
   top: 200vh; /* Slightly below the first */
-  left: 5vw; /* Random position to the right */
+  left: 15vw; /* Random position to the right */
 }
 
 .item9 {
   top: 230vh; /* Further down for vertical scroll */
-  right: 13vw; /* Shifted to the right */
+  right: 3vw; /* Shifted to the right */
 }
 
 .item10 {
-  top:240vh; /* Random position below the others */
-  left: 3vw; /* Positioned inside container */
+  top:250vh; /* Random position below the others */
+  left: 10vw; /* Positioned inside container */
 }
 
 
@@ -610,6 +611,25 @@ font-style: normal;
 
 }
 
+#project1 .item5 {
+  width: 20vw;
+  right: 20vw;
+}
+
+#project1 .item6 {
+  width: 30vw;
+}
+
+#project1 .item7{
+  width: 30vw;
+}
+
+#project1 .item8{
+  width: 30vw;
+}
+
+
+
 
 #project2 .project-section {
   background-color: #00000071;
@@ -631,10 +651,35 @@ font-style: normal;
   width: 30vw;
 }
 
-#project2 .item4 {
+#project2 .item5, .item6 {
   width: 20vw;
   right: 20vw;
 }
+
+
+#project3 .project-section {
+  background-color: #00000071;
+  background-image: url(images/joiadeafrica/backgroundjoia.webp);
+  background-position:center;
+  background-blend-mode: overlay; /* Or use multiply, darken, etc., depending on the effect you want */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#project3 .project-text h1 {
+  color: #E9652D;
+  font-size: 4vw;
+}
+
+#project3 .project-text p {
+  color:#FCF1D2;
+}
+
+#project3 .item6 {
+  color:#FCF1D2;
+  width:30vw;
+}
+
+
 
 
 
