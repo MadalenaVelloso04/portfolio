@@ -288,6 +288,33 @@ font-weight: 700;
   color: #FCF1D2; /* Set default text color */
 }
 
+.card1 {
+  border: 0.5px solid #FCF1D2;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  padding: 40px;
+  text-align: center;
+  margin: 10px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+  width: 30vw;              
+  height: 60vh;  
+  
+  /* Background properties */
+  background-image: url(images/0097.webp);
+  background-size: cover; /* Ensure the image covers the entire card */
+  background-position: center; /* Center the background image */
+  color: #FCF1D2; /* Set default text color */
+}
+
 
 
 /* Card content style */
