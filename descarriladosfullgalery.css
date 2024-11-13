@@ -12,12 +12,12 @@
     box-sizing: border-box;
     cursor: none; /* Hide the default cursor */
     text-decoration: none;
-    font-family: 'impact';
-    font-weight: 400;
-    font-style: normal;
 }
 
 body {
+    font-family: 'impact';
+    font-weight: 400;
+    font-style: normal;
     background-color: #111;
     color: #fff;
     display: flex;
@@ -34,11 +34,9 @@ header{
 .circle-cursor {
     position: absolute;
     border-radius: 50%; /* This makes it a circle */
-    background-color: rgba(255, 255, 255, 0.673); /* Customize the color */
     pointer-events: none; /* Allow interaction through the circle cursor */
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     background-color: #FCF1D2;
     mix-blend-mode: difference; /* The key to the effect */
     transform: translate(-50%, -50%);
