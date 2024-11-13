@@ -506,7 +506,6 @@ font-style: normal;
 .carousel-item {
   position: absolute; /* Position each item absolutely within the container */
   width: 30vw; /* Fixed width for images */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   height: auto; /* Adjust height automatically based on content */
   overflow: hidden;
   transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover and appearance */
@@ -601,7 +600,7 @@ font-style: normal;
 }
 
 
-#project1 .project-section {
+#project4 .project-section {
   background-color: #00000071;
   background-image: url(images/fundozine.png);
   background-position:center;
@@ -611,27 +610,27 @@ font-style: normal;
 
 }
 
-#project1 .item5 {
+#project4 .item5 {
   width: 20vw;
   right: 20vw;
 }
 
-#project1 .item6 {
+#project4 .item6 {
   width: 30vw;
 }
 
-#project1 .item7{
+#project4 .item7{
   width: 30vw;
 }
 
-#project1 .item8{
+#project4 .item8{
   width: 30vw;
 }
 
 
 
 
-#project2 .project-section {
+#project5 .project-section {
   background-color: #00000071;
   background-image: url(images/backgroundteju.png);
   background-position:center;
@@ -639,25 +638,25 @@ font-style: normal;
   background-size: cover;
   background-repeat: no-repeat;
 }
-#project2 .project-text h1 {
+#project5 .project-text h1 {
   color: #F3CF31;
 }
 
-#project2 .project-text p {
+#project5 .project-text p {
   color:#FCF1D2;
 }
 
-#project2 .carousel-item {
+#project5 .carousel-item {
   width: 30vw;
 }
 
-#project2 .item5, .item6 {
+#project5 .item5, .item6 {
   width: 20vw;
   right: 20vw;
 }
 
 
-#project3 .project-section {
+#project2 .project-section {
   background-color: #00000071;
   background-image: url(images/joiadeafrica/backgroundjoia.webp);
   background-position:center;
@@ -665,16 +664,16 @@ font-style: normal;
   background-size: cover;
   background-repeat: no-repeat;
 }
-#project3 .project-text h1 {
+#project2 .project-text h1 {
   color: #E9652D;
   font-size: 4vw;
 }
 
-#project3 .project-text p {
+#project2 .project-text p {
   color:#FCF1D2;
 }
 
-#project3 .item6 {
+#project2 .item6 {
   color:#FCF1D2;
   width:30vw;
 }
@@ -683,7 +682,7 @@ font-style: normal;
 
 
 
-#project4 .project-section {
+#project3 .project-section {
   background-color: #00000071;
   background-image: url(images/WebP/backgroundmononcle.webp);
   background-position:center;
@@ -692,26 +691,26 @@ font-style: normal;
   background-repeat: no-repeat;
 }
 
-#project4 .project-text h1 {
+#project3 .project-text h1 {
   color: #DA3933;
 }
 
 
-#project4 .item6, .item7, .item8, .item9 {
+#project3 .item6, .item7, .item8, .item9 {
   width: 20vw;
   right: 20vw;
 }
 
 
-#project5 .project-section {
+#project6 .project-section {
   background-color: rgb(17, 20, 16);
 }
-#project5 .project-text h1 {
+#project6 .project-text h1 {
   color: #76946e;
   font-size: 3vw;
 }
 
-#project5 .project-section {
+#project6 .project-section {
   background-color: #00000071;
   background-image: url(images/leafs\ Large.jpeg);
   background-position:center;
@@ -720,20 +719,20 @@ font-style: normal;
   background-repeat: no-repeat;
 }
 
-#project6 .project-section {
+#project1 .project-section {
   background-color: #00000071;
-  background-image: url(images/descarriladostitulos.webp);
+  background-image: url(images/wetransfer_render_1-png_2024-11-05_2342/render_1.png);
   background-position:center;
   background-blend-mode: overlay; /* Or use multiply, darken, etc., depending on the effect you want */
   background-size: cover;
   background-repeat: no-repeat;
 }
-#project6 .project-text h1 {
+#project1 .project-text h1 {
   color: #FF3333;
   font-size: 3vw;
 }
 
-#project6 .project-text p {
+#project1 .project-text p {
   color:#FCF1D2;
 }
 
