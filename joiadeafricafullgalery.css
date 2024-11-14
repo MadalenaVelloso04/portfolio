@@ -361,7 +361,9 @@ width: auto;
     width: 10vw;
 }
 
-
+.h2ja {
+    font-size: 3vw;
+}
 
 /* Item details */
 .item-details {
