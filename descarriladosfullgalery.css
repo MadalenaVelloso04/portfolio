@@ -351,6 +351,10 @@ width: auto;
     border-radius: 8px; /* Optional: add rounded corners */
 }
 
+.h2ja {
+    font-size: 2.3vw;
+}
+
 /* Text content styling */
 .featured-content p {
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
