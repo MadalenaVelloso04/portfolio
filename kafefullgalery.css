@@ -335,6 +335,10 @@ width: auto;
     line-height: 1.5;
 }
 
+.h2ja {
+    font-size: 2.3vw;
+}
+
 /* Individual featured item */
 .featured-item {
     max-width: 35vw; /* Max width for images */
