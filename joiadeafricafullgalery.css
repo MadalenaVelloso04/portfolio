@@ -270,6 +270,7 @@ width: auto;
     display: block;
 }
 
+
 /* Hover Effect - Fade out original image */
 .hero-image-wrapper:hover .hero-image {
     opacity: 0;
@@ -343,7 +344,9 @@ width: auto;
     margin-bottom: 20px; /* Space below images */
 }
 
-
+.detail1 {
+width: 20vw;
+}
 
 
 .featured-item .grid {
