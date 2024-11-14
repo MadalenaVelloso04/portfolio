@@ -254,7 +254,7 @@ width: auto;
 }
 
 .hero-image-wrapper {
-    width: 30vw; /* Width in vw units */
+    width: 25vw; /* Width in vw units */
     height: auto; /* Maintain aspect ratio */
     overflow: hidden; /* Hide any overflow */
     background-image: url(images/Ativo\ 5\ copy.webp);
