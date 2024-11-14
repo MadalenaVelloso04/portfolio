@@ -763,7 +763,30 @@ font-style: normal;
   color:#FCF1D2;
 }
 
+#project7 .project-section {
+  background-color: #00000071;
+  background-image: url(images/kafe/patternkafe.webp);
+  background-position:center;
+  background-blend-mode: overlay; /* Or use multiply, darken, etc., depending on the effect you want */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#project7 .project-text h1 {
+  color: #DBCFE1;
+}
 
+#project8 .project-section {
+  background-color: #00000071;
+  background-image: url(images/Ativo1.webp);
+  background-position:center;
+  background-blend-mode: overlay; /* Or use multiply, darken, etc., depending on the effect you want */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#project8 .project-text h1 {
+  color: #8cb5de;
+  font-size: 3vw;
+}
 
 
 
