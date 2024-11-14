@@ -322,8 +322,8 @@ width: auto;
 .featured-content h2 {
     font-family: "itc-avant-garde-gothic-pro", sans-serif;
     font-weight: 700;
-    font-size: 2vw;
-    color: #2E3192;
+    font-size: 2.5vw;
+    color: #ffffff;
 }
 
 /* Text paragraphs */
@@ -342,6 +342,9 @@ width: auto;
     text-align: center;
     margin-bottom: 20px; /* Space below images */
 }
+
+
+
 
 .featured-item .grid {
     height: 30vh;
