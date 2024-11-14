@@ -763,6 +763,13 @@ font-style: normal;
   color:#FCF1D2;
 }
 
+#project5 .item6, .item7 {
+  width: 30vw;
+left: 30vw;
+}
+
+
+
 #project7 .project-section {
   background-color: #00000071;
   background-image: url(images/kafe/patternkafe.webp);
