@@ -35,6 +35,32 @@ h2 {
   text-decoration: none;
 }
 
+#changingTextContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FCF1D2; /* Text color */
+}
+
+#changingText {
+  display: flex;
+  flex-direction: column; /* Stack words vertically */
+  gap: 10px; /* Spacing between words */
+  font-size: 7vw; /* Responsive font size */
+  text-align: center; /* Center align text */
+  white-space: nowrap; /* Prevent word wrapping */
+}
+
+@media (max-width: 768px) {
+  #changingText {
+      font-size: 7vw; /* Increase font size for smaller screens */
+  }
+}
+
+
+
 .descript {
   position: absolute;
   bottom: 0px;
@@ -52,6 +78,7 @@ h2 {
     font-size: 20px;
   }
 }
+
 
 .letstalk {
   position: absolute;
@@ -116,7 +143,6 @@ h1 {
 h1:hover {
   color: #1F1E19; 
 }
-
 /* Navbar Base */
 #navbar {
   margin-top: 0px;
@@ -194,6 +220,7 @@ h1:hover {
   .navbar-links {
     font-size: 20px; 
     gap: 20px;
+    flex-wrap: wrap; /* Wrap links if necessary but stay horizontal */
   }
 
   .navbar-logo {
@@ -208,13 +235,13 @@ h1:hover {
 /* Further Adjustments for Very Small Screens (e.g., Phones) */
 @media (max-width: 480px) {
   #navbar {
-    flex-direction: column;
-    padding: 15px 10px;
+    flex-direction: row; /* Ensure the navbar stays horizontal */
+    flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+    justify-content: space-between;
   }
 
   .navbar-links {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row; /* Force horizontal layout */
     gap: 10px;
   }
 
@@ -223,9 +250,10 @@ h1:hover {
   }
 
   .navbar-logo {
-    margin-bottom: 10px;
+    margin-bottom: 0; /* Remove extra space */
   }
 }
+
 
 .content {
   text-align: center;
@@ -299,78 +327,7 @@ h1:hover {
   font-size: 1.5vw; /* Adjust font size */
 }
 
-/* Add "sticker" images on the side */
-.sticker {
-  position: absolute;
-  width: 200px; /* Set your desired size for the sticker */
-  height: auto;
-  z-index: 2;
-  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
-}
 
-/* Position the stickers on the side */
-.sticker-1 {
-  top: 10%; /* Adjust as needed */
-  right: -50%; /* Adjust as needed */
-  transform: rotate(-10deg); /* Optional: give it a tilted look */
-}
-
-.sticker-2 {
-  bottom: -40%; /* Adjust as needed */
-  left: -30%; /* Adjust as needed */
-  transform: rotate(-15deg); /* Optional: give it a tilted look */
-}
-
-.sticker-3 {
-  top: -5%; /* Adjust as needed */
-  left: -40%; /* Adjust as needed */
-  transform: rotate(25deg); /* Optional: give it a tilted look */
-}
-
-.sticker:hover {
-  transform: scale(1.1); /* Slightly enlarge on hover */
-}
-
-/* Media query adjustments for smaller screens */
-@media (max-width: 768px) {
-  .sticker-1 {
-    top: 15%; /* Move slightly lower */
-    right: -40%; /* Shift it closer to the right */
-    width: 80px; /* Make it smaller */
-  }
-
-  .sticker-2 {
-    bottom: -20%; /* Shift it up */
-    left: -25%; /* Shift it closer to the left */
-    width: 80px; /* Make it smaller */
-  }
-
-  .sticker-3 {
-    top: 5%; /* Move it slightly lower */
-    left: -30%; /* Shift it to the left */
-    width: 80px; /* Make it smaller */
-  }
-}
-
-@media (max-width: 480px) {
-  .sticker-1 {
-    top: 20%; /* Move slightly lower */
-    right: -30%; /* Shift it closer to the right */
-    width: 60px; /* Make it smaller */
-  }
-
-  .sticker-2 {
-    bottom: -10%; /* Shift it up more */
-    left: -20%; /* Shift it closer to the left */
-    width: 60px; /* Make it smaller */
-  }
-
-  .sticker-3 {
-    top: 10%; /* Move slightly lower */
-    left: -25%; /* Shift it closer to the left */
-    width: 60px; /* Make it smaller */
-  }
-}
 
 
 /* For smaller screen sizes */

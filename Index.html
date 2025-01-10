@@ -57,17 +57,31 @@
     
         <a class="letstalk" href="mailto:madalenavelloso04@gmail.com">LETS TALK</a>
 
-   
 
     <script>
-        const texts = ["HELLO", "HELLO HELLO", "HELLO HELLO HELLO"];
-        let count = 0;
-        const textElement = document.getElementById("changingText");
-    
-        setInterval(() => {
-            textElement.textContent = texts[count];
-            count = (count + 1) % texts.length;
-        }, 1000); // Changes text every 2 seconds
+      const texts = ["HELLO", "HELLO HELLO", "HELLO HELLO HELLO"];
+let count = 0;
+const textElement = document.getElementById("changingText");
+
+function updateTextVertically(text) {
+    // Clear the current content
+    textElement.innerHTML = '';
+
+    // Split text into words and add each word as a line
+    const words = text.split(' ');
+    words.forEach((word) => {
+        const wordElement = document.createElement('div');
+        wordElement.textContent = word;
+        textElement.appendChild(wordElement);
+    });
+}
+
+// Update text every second
+setInterval(() => {
+    updateTextVertically(texts[count]);
+    count = (count + 1) % texts.length;
+}, 1000);
+
     </script>
     
 </div>
@@ -84,9 +98,6 @@
         The combination of my fine arts background with my design studies has pushed me to think beyond the conventional, always returning to the essentials—paper and pencil—as the foundation of my creative process. I believe that merging classical techniques with digital innovation leads to unique and impactful designs.
 
         </div>
-        <img src="images/mephoto1.png" alt="Sticker 1" class="sticker sticker-1">
-        <img src="images/mephoto2.png" alt="Sticker 2" class="sticker sticker-2">
-        <img src="images/passorportsizedpicture copy Medium.png" alt="Sticker 3" class="sticker sticker-3">
     </div>
     </section>
 
