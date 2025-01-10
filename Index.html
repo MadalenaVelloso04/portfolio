@@ -84,83 +84,64 @@
         The combination of my fine arts background with my design studies has pushed me to think beyond the conventional, always returning to the essentials—paper and pencil—as the foundation of my creative process. I believe that merging classical techniques with digital innovation leads to unique and impactful designs.
 
         </div>
+        <img src="images/mephoto1.png" alt="Sticker 1" class="sticker sticker-1">
+        <img src="images/mephoto2.png" alt="Sticker 2" class="sticker sticker-2">
+        <img src="images/passorportsizedpicture copy Medium.png" alt="Sticker 3" class="sticker sticker-3">
     </div>
     </section>
 
 
       <!-- New Section Beneath About Me -->
       <section class="new-section" id="new-section">
-        <div class="new-section-content">
-            <h2 class="section-title">My Skills</h2>
-            <div class="containerskills">
-                <div class="flex">
-                    <p>Illustrator</p>
-                    <div class="bar">
-                        <div class="inside1"></div>
-                    </div>
-                    <h3>90%</h3>
-                </div>
-                <div class="flex">
-                    <p>Photoshop</p>
-                    <div class="bar">
-                        <div class="inside2"></div>
-                    </div>
-                    <h3>80%</h3>
-                </div>
-                <div class="flex">
-                    <p>InDesign</p>
-                    <div class="bar">
-                        <div class="inside3"></div>
-                    </div>
-                    <h3>70%</h3>
-                </div>
-                <div class="flex">
-                    <p>After Effects</p>
-                    <div class="bar">
-                        <div class="inside4"></div>
-                    </div>
-                    <h3>85%</h3>
-                </div>
-                <div class="flex">
-                    <p>Figma</p>
-                    <div class="bar">
-                        <div class="inside5"></div>
-                    </div>
-                    <h3>75%</h3>
-                </div>
-                <div class="flex">
-                    <p>Dimention</p>
-                    <div class="bar">
-                        <div class="inside6"></div>
-                    </div>
-                    <h3>65%</h3>
-                </div>
-                <!-- New skills added here -->
-                <div class="flex">
-                    <p>Blender</p>
-                    <div class="bar">
-                        <div class="inside7"></div>
-                    </div>
-                    <h3>85%</h3>
-                </div>
-                <div class="flex">
-                    <p>Autocad</p>
-                    <div class="bar">
-                        <div class="inside8"></div>
-                    </div>
-                    <h3>75%</h3>
-                </div>
-                <div class="flex">
-                    <p>Html/Css</p>
-                    <div class="bar">
-                        <div class="inside9"></div>
-                    </div>
-                    <h3>65%</h3>
-                </div>
+        <div class="scroll-container">
+          <div class="scroll-content">
+              <img src="images/posterdescarrilados.webp" alt="Image 1">
+              <img src="images/mononcle.webp" alt="Image 2">
+              <img src="images/New Folder With Items 2/POSTERSGARE.webp" alt="Image 3">
+              <img src="images/New Folder With Items 2/Prancheta 1_1 copy.webp" alt="Image 4">
+              <!-- Add more images as needed -->
             </div>
         </div>
     </section>
-    
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollContent = document.querySelector('.scroll-content');
+  const images = Array.from(scrollContent.querySelectorAll('img')); // Convert NodeList to Array
+
+  // Function to preload images
+  function preloadImages(images, callback) {
+    let loadedCount = 0;
+    images.forEach((img) => {
+      const tempImg = new Image();
+      tempImg.src = img.src;
+      tempImg.onload = () => {
+        loadedCount++;
+        if (loadedCount === images.length) callback();
+      };
+    });
+  }
+
+  // Duplicate images for seamless scrolling
+  scrollContent.innerHTML += scrollContent.innerHTML;
+
+  // Once all images are preloaded
+  preloadImages(images, () => {
+    const updatedImages = Array.from(scrollContent.querySelectorAll('img')); // Include duplicated images
+    let totalWidth = 0;
+
+    updatedImages.forEach((img) => {
+      totalWidth += img.offsetWidth;
+    });
+
+    scrollContent.style.width = `${totalWidth}px`; // Set the total width
+    scrollContent.style.animationPlayState = 'running'; // Start the animation
+  });
+});
+
+
+      </script>
+      
     
 
     <section id="contact-section">
