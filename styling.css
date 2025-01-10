@@ -30,6 +30,11 @@ body {
   z-index: 2;
 }
 
+header{
+  height: 15vh;
+}
+
+
 h2 {
   font-family: 'impact';
   text-decoration: none;
