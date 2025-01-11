@@ -312,8 +312,9 @@ h1:hover {
   z-index: -1;
 }
 
+/* Desktop and larger screens */
 .about-me-content {
-  position: fixed; /* Keep it fixed */
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -327,28 +328,33 @@ h1:hover {
   color: #FCF1D2;
   font-family: "itc-avant-garde-gothic-pro", sans-serif;
   font-size: 1.2rem;
+  line-height: 1.5; /* Better readability */
 }
 
 /* Tablet screens */
 @media (max-width: 768px) {
-  .about-me {
-    height: 100dvh; /* Dynamic viewport height for mobile */
-    background-attachment: scroll; /* Prevents iOS parallax glitch */
-  }
-
   .about-me-content {
-    position: fixed; /* Keep it fixed */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 80%;
+    max-width: 70vw; /* Reduce width */
+    font-size: 1rem; /* Slightly smaller text */
+    line-height: 1.4;
     padding: 15px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .about-me-content {
+    max-width: 85vw; /* Reduce width even more */
+    font-size: 0.9rem; /* Smaller font size */
+    line-height: 1.4;  /* Tighter line spacing */
+    padding: 10px;
   }
 
   .about-me-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
+
 
 /* Mobile screens */
 @media (max-width: 480px) {
