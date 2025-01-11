@@ -249,6 +249,8 @@ html {
 }
 
 
+
+
 h1{
   font-style: normal;
     text-transform: uppercase;
@@ -309,7 +311,6 @@ font-weight: 700;
 
 
 
-
 /* Card content style */
 .card-content {
   position: relative; /* Position relative for absolute positioning of text */
@@ -333,7 +334,6 @@ font-weight: 700;
 
 /* Hover Effect */
 .card:hover {
-  opacity: 50%;
   transform: scale(1.05); /* Slight zoom on hover */
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
