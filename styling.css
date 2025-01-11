@@ -314,44 +314,44 @@ h1:hover {
 
 /* Desktop and larger screens */
 .about-me-content {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  padding: 20px;
-  max-width: 45vw;
-  color: #FCF1D2;
-  font-family: "itc-avant-garde-gothic-pro", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.5; /* Better readability */
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  padding: 20px !important;
+  max-width: 45vw !important;
+  color: #FCF1D2 !important;
+  font-family: "itc-avant-garde-gothic-pro", sans-serif !important;
+  font-size: 1.2rem !important;
+  line-height: 1.5 !important;
 }
 
 /* Tablet screens */
 @media (max-width: 768px) {
   .about-me-content {
-    max-width: 70vw; /* Reduce width */
-    font-size: 1rem; /* Slightly smaller text */
-    line-height: 1.4;
-    padding: 15px;
+    max-width: 70vw !important;  /* Narrower text block */
+    font-size: 1rem !important;  /* Smaller text */
+    line-height: 1.4 !important;
+    padding: 15px !important;
   }
 }
 
-/* Mobile screens */
+/* Mobile screens (iPhones) */
 @media (max-width: 480px) {
   .about-me-content {
-    max-width: 85vw; /* Reduce width even more */
-    font-size: 0.9rem; /* Smaller font size */
-    line-height: 1.4;  /* Tighter line spacing */
-    padding: 10px;
+    max-width: 85vw !important;  /* More width */
+    font-size: 0.85rem !important;  /* Smaller font size */
+    line-height: 1.4 !important;
+    padding: 10px !important;
   }
 
   .about-me-text {
-    font-size: 0.9rem;
+    font-size: 0.85rem !important;
   }
 }
 
