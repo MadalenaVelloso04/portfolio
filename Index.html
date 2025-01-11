@@ -102,16 +102,18 @@ setInterval(() => {
         </div>
     </div>
     </section>
+      
 
 
       <!-- New Section Beneath About Me -->
       <section class="new-section" id="new-section">
         <div class="scroll-container">
           <div class="scroll-content">
-              <img src="images/posterdescarrilados.webp" alt="Image 1">
-              <img src="images/mononcle.webp" alt="Image 2">
-              <img src="images/New Folder With Items 2/POSTERSGARE.webp" alt="Image 3">
-              <img src="images/New Folder With Items 2/Prancheta 1_1 copy.webp" alt="Image 4">
+            <img src="images/posterdescarrilados.webp" alt="Image 1" loading="lazy">
+            <img src="images/mononcle.webp" alt="Image 2" loading="lazy">
+            <img src="images/New Folder With Items 2/POSTERSGARE.webp" alt="Image 3" loading="lazy">
+            <img src="images/New Folder With Items 2/Prancheta 1_1 copy.webp" alt="Image 4" loading="lazy">
+            
               <!-- Add more images as needed -->
             </div>
         </div>
@@ -120,9 +122,9 @@ setInterval(() => {
     <script>
 document.addEventListener('DOMContentLoaded', () => {
   const scrollContent = document.querySelector('.scroll-content');
-  const images = Array.from(scrollContent.querySelectorAll('img')); // Convert NodeList to Array
+  const images = Array.from(scrollContent.querySelectorAll('img'));
 
-  // Function to preload images
+  // Function to preload images in parallel
   function preloadImages(images, callback) {
     let loadedCount = 0;
     images.forEach((img) => {
