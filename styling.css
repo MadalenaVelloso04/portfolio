@@ -362,7 +362,7 @@ h1:hover {
 
   .about-me-text {
     font-size: 0.8rem !important;
-    text-align:left !important; /* Neater text alignment */
+    text-align: center !important; /* Neater text alignment */
   }
 }
 
