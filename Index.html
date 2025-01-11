@@ -107,55 +107,59 @@ setInterval(() => {
 
       <!-- New Section Beneath About Me -->
       <section class="new-section" id="new-section">
-        <div class="scroll-container">
-          <div class="scroll-content">
-            <img src="images/posterdescarrilados.webp" alt="Image 1" loading="lazy">
-            <img src="images/mononcle.webp" alt="Image 2" loading="lazy">
-            <img src="images/New Folder With Items 2/POSTERSGARE.webp" alt="Image 3" loading="lazy">
-            <img src="images/New Folder With Items 2/Prancheta 1_1 copy.webp" alt="Image 4" loading="lazy">
-            
-              <!-- Add more images as needed -->
+        <section class="new-section" id="new-section">
+            <div class="scroll-container">
+              <div class="scroll-content">
+                <img src="images/posterdescarrilados.webp" alt="Image 1" loading="lazy">
+                <img src="images/mo1.png" alt="Image 2" loading="lazy">
+                <img src="images/New Folder With Items 2/Design.webp" alt="Image 3" loading="lazy">
+                <img src="images/New Folder With Items 2/Prancheta 1_1 copy.webp" alt="Image 4" loading="lazy">
+              </div>
             </div>
-        </div>
+          </section>
+          <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const scrollContent = document.querySelector('.scroll-content');
+              const images = Array.from(scrollContent.querySelectorAll('img')); // Convert NodeList to Array
+            
+              // Function to preload images
+              function preloadImages(images, callback) {
+                let loadedCount = 0;
+                images.forEach((img) => {
+                  const tempImg = new Image();
+                  tempImg.src = img.src;
+                  tempImg.onload = () => {
+                    loadedCount++;
+                    console.log(`Image Loaded: ${img.src}`);
+                    if (loadedCount === images.length) callback();
+                  };
+                });
+              }
+            
+              // Duplicate images for seamless scrolling
+              scrollContent.innerHTML += scrollContent.innerHTML;
+            
+              // Once all images are preloaded
+              preloadImages(images, () => {
+                const updatedImages = Array.from(scrollContent.querySelectorAll('img')); // Include duplicated images
+                let totalWidth = 0;
+            
+                updatedImages.forEach((img) => {
+                  totalWidth += img.offsetWidth;
+                });
+            
+                scrollContent.style.width = `${totalWidth}px`; // Set the total width
+                scrollContent.style.animationPlayState = 'running'; // Start the animation
+              });
+            });
+            
+ 
+
+                  </script>
+          
     </section>
 
-    <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const scrollContent = document.querySelector('.scroll-content');
-  const images = Array.from(scrollContent.querySelectorAll('img'));
-
-  // Function to preload images in parallel
-  function preloadImages(images, callback) {
-    let loadedCount = 0;
-    images.forEach((img) => {
-      const tempImg = new Image();
-      tempImg.src = img.src;
-      tempImg.onload = () => {
-        loadedCount++;
-        if (loadedCount === images.length) callback();
-      };
-    });
-  }
-
-  // Duplicate images for seamless scrolling
-  scrollContent.innerHTML += scrollContent.innerHTML;
-
-  // Once all images are preloaded
-  preloadImages(images, () => {
-    const updatedImages = Array.from(scrollContent.querySelectorAll('img')); // Include duplicated images
-    let totalWidth = 0;
-
-    updatedImages.forEach((img) => {
-      totalWidth += img.offsetWidth;
-    });
-
-    scrollContent.style.width = `${totalWidth}px`; // Set the total width
-    scrollContent.style.animationPlayState = 'running'; // Start the animation
-  });
-});
-
-
-      </script>
+  
       
     
 
