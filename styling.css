@@ -406,14 +406,19 @@ html {
   height: 80%;
   max-width: 100%; /* Ensure they don't stretch too much */
   object-fit: contain;
+  transition: transform 0.3s ease-in-out;
 }
 
 .scroll-content {
   display: flex;
   align-items: center;
   gap: 20px; /* Space between images */
-  animation: scroll-animation 30s linear infinite; /* Adjust speed */
+  animation: scroll-animation 7s linear infinite; /* Adjust speed */
   will-change: transform; /* Hint to the browser for optimization */
+}
+
+.scroll-content img:hover {
+  transform: scale(1.05);
 }
 
 
