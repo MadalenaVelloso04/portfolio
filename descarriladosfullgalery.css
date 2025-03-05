@@ -17,6 +17,11 @@
     font-style: normal;
 }
 
+header{
+    height: 15vh;
+}
+
+
 body {
     font-family: 'impact';
     font-weight: 400;
